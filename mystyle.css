@@ -1,0 +1,67 @@
+#shark{
+    left:100px; top:400px;
+    position: absolute;
+    animation-name: Shark;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes Shark{
+    0% {left: 100px; top: 400px;}
+    20% {left: 300px; top: 400px;}
+    40% {left: 500px; top: 300px;}
+    50% {left: 600px; top: 50px;}
+    60% {left: 600px; top: 100px;}
+    80% {left: 500px; top: 200px;}
+    100% {left: 100px; top: 400px; transform:scaleX(-1);}
+}
+
+#diver1{
+    left:200px; top:500px;
+    position: absolute;
+    animation: DiverUp 6s ease-in-out infinite;
+}
+
+@keyframes DiverUp{
+    0% {top: 500px;}
+    50% {top: 300px;}
+    100% {top: 500px;}
+}
+
+#diver2{
+    left: 300px; top: 600px;
+    position: absolute;
+    animation: DiverDown 6s ease-in-out infinite;
+}
+
+@keyframes DiverDown{
+    0% {top: 600px;}
+    50% {top: 400px;}
+    100% {top: 600px;}
+}
+
+#diver3{
+    left:400px; top:550px;
+    position: absolute;
+    animation: DiverSide 6s ease-in-out infinite;
+}
+
+@keyframes DiverSide{
+    0% {left: 400px;}
+    50% {left: 600px;}
+    100% {left: 400px;}
+}
+
+#turtle{
+    left:100px; top:450px;
+    position: absolute;
+    animation: TurtleSwim 20s linear infinite;
+}
+
+@keyframes TurtleSwim{
+    0% {left: 100px; }
+    50% {left: 600px; }
+    100% {left: 100px; transform: scaleX(-1);}
+}
